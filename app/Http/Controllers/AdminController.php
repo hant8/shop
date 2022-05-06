@@ -55,6 +55,7 @@ class AdminController extends Controller
             'amount' => $data['amount'],
             'price' => $data['price'],
             'description' => $data['description'],
+            'image' => '',
             'category_id' => $request->category_id,
         ]);
        
@@ -77,6 +78,7 @@ class AdminController extends Controller
                 'amount' => $data['amount'],
                 'price' => $data['price'],
                 'description' => $data['description'],
+                'image' => '',
                 'category_id' => $request->category_id,
         ]);
         return redirect()->route('products');    
