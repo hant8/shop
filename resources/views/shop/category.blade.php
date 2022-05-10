@@ -27,7 +27,7 @@
       <td>{{$product->name}}</td>
       <td>{{$product->amount}}</td>
       <td>{{$product->price}}</td>
-      <td><img  height="100px" width="50px" src="{{$product->image}}"></td>
+      <td><img  height="100px" width="50px" src="/storage/products{{$product->image}}"></td>
       <td>
           <a href="/show/{{$product->id}}">
             <button type="button" class="btn btn-success">Просмотр</button>

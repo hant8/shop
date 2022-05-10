@@ -48,14 +48,14 @@ class AdminController extends Controller
             'description' => 'required',
         ]); 
         $product = Product::findOrFail($id);
-
+        $image = str_replace('products','', $request->file('image')->store('products','public'));
         $product->update([
             'name' => $data['name'],
             'code' => $data['code'],
             'amount' => $data['amount'],
             'price' => $data['price'],
             'description' => $data['description'],
-            'image' => '',
+            'image' => $image,
             'category_id' => $request->category_id,
         ]);
        
@@ -71,14 +71,14 @@ class AdminController extends Controller
             'description' => 'required',
             
         ]);
-
+        $image = str_replace('products','', $request->file('image')->store('products','public'));
         Product::create([
                 'name' => $data['name'],
                 'code' => $data['code'],
                 'amount' => $data['amount'],
                 'price' => $data['price'],
                 'description' => $data['description'],
-                'image' => '',
+                'image' => $image,
                 'category_id' => $request->category_id,
         ]);
         return redirect()->route('products');    
