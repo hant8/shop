@@ -4,12 +4,16 @@
 
 @if(isset($user))
 @section('name')
-{{$user->name}}<br>{{$user->role}}
+<blockquote class="blockquote">
+  <p>{{$user->name}} <br>{{$user->role}}</p>
+
+</blockquote>
 @endsection
 @endif
 
 @section('content')
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 mb-20">
+    
         @foreach($products as $product)
 
             <div class="px-4 py-8 max-w-xl">
@@ -24,6 +28,7 @@
                         <a href="/show/{{$product->id}}">
                             <button type="button" class="btn btn-success">Просмотр</button>
                         </a>
+                        <a href="{{route('cartAdd',['id' => $product->id])}}" class="btn btn-warning">Добавит в корзину</a>
                         </p>
                     </div>
                 </div>

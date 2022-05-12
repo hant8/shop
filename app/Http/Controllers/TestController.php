@@ -71,6 +71,7 @@ class TestController extends Controller
     }
     public function filter(Request $request)
     {   
+       
         if(!empty($request->input('min')) and !empty($request->input('max')))
         {   
             $products = Product::where([

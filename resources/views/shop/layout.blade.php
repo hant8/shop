@@ -30,6 +30,9 @@
                         <a class="flex items-center mt-4 py-2 px-6 bg-gray-700 bg-opacity-25 text-gray-100" href="{{route('home')}}">
                             <span class="mx-3">Главная</span>
                         </a>
+                        <a class="flex items-center mt-4 py-2 px-6 bg-gray-700 bg-opacity-25 text-gray-100" href="{{route('cartCheck')}}">
+                            <span class="mx-3">Корзина</span>
+                        </a>
                         <a class="flex items-center mt-4 py-2 px-6 bg-gray-700 bg-opacity-25 text-gray-100" href="{{route('catalog')}}">
                             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                  stroke="currentColor">
@@ -74,15 +77,17 @@
 
                         @auth('web')
                           <div class="flex items-center">
-                            @yield('name')
+                          @yield('name')
+
                             <div x-data="{ dropdownOpen: false }" class="relative">
+                            
                                 <button @click="dropdownOpen = ! dropdownOpen"
                                         class="relative block h-8 w-8 rounded-full overflow-hidden shadow focus:outline-none">
                                     <img class="h-full w-full object-cover"
-                                         src="https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=296&amp;q=80"
+                                         src="https://www.freepnglogos.com/uploads/lotus-png/png-lotus-flower-transparent-lotus-flower-images-26.png"
                                          alt="Your avatar">
                                 </button>
-
+                                
                                 <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"
                                      style="display: none;"></div>
 

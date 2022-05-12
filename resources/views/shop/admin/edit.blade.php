@@ -3,18 +3,21 @@
 @section('title', isset($product)?'Редактирование':'Создание')
 
 @section('name')
-{{$user->name}}<br>{{$user->role}}
+<blockquote class="blockquote">
+  <p>{{$user->name}} <br>{{$user->role}}</p>
+
+</blockquote>
 @endsection
 
 @section('content')
-<div class="container mx-auto px-6 py-8">
-                            <h3 class="text-gray-700 text-3xl font-medium">{{isset($product)?'Редактирование товара':'Добавление товара'}}</h3>
+                            <div class="container mx-auto px-6 py-8">
+                                    <h3 class="text-gray-700 text-3xl font-medium">{{isset($product)?'Редактирование товара':'Добавление товара'}}</h3>
 
-                            <div class="mt-8">
+                                    <div class="mt-8">
 
-                            </div>
+                                    </div>
 
-                            <div class="mt-8">
+                                    <div class="mt-8">
                                 <form  enctype="multipart/form-data" class="space-y-5 mt-5" method="POST" action="{{isset($product)?'/update/'.$product->id:'/store'}}">
                                     @csrf
                                 <div class="input-group input-group-lg">
@@ -76,5 +79,5 @@
                                     <button type="submit" class="text-center w-full bg-blue-900 rounded-md text-white py-3 font-medium">Сохранить</button>
                                 </form>
                             </div>
-                        </div>
+                        </div>                        
 @endsection

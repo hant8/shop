@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CartController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,6 +41,9 @@ Route::get('/show/{id}',[TestController::class,'show'])->name('show');
 Route::get('/products',[TestController::class,'products'])->name('products');
 Route::get('/showCategory/{id}',[TestController::class,'showCategory'])->name('showCategory');
 Route::post('/filter',[TestController::class,'filter'])->name('filter');
-Route::get('/zzz',function (){
-    return view('shop.zzz');
-});
+Route::post('/filter',[TestController::class,'filter'])->name('filter');
+Route::get('/cartAdd',[CartController::class,'cartAdd'])->name('cartAdd');
+Route::get('/cartCheck',[CartController::class,'cartCheck'])->name('cartCheck');
+Route::post('/buy',[CartController::class,'buy'])->name('buy');
+Route::get('/removeProductCart',[CartController::class,'removeProductCart'])->name('removeProductCart');
+

@@ -4,7 +4,10 @@
 
 @if(isset($user))
 @section('name')
-{{$user->name}}<br>{{$user->role}}
+<blockquote class="blockquote">
+  <p>{{$user->name}} <br>{{$user->role}}</p>
+
+</blockquote>
 @endsection
 @endif
 
