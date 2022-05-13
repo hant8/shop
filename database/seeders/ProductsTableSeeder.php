@@ -22,7 +22,7 @@ class ProductsTableSeeder extends Seeder
                 'code' => 'Appliances',
                 'amount' => 10,
                 'price' => 22999,
-                'image' => 'https://c.dns-shop.ru/thumb/st4/fit/500/500/91a926d33d52f307e7f9ce2138163e66/f9300bedcebcd938dd5b3dd2313e508514417b939ca3255bf151ae25376366bc.jpg.webp',
+                'image' => '/HpLwf2jIAe7DrXhmu2ytavldlwmHK21YXCPx8kjA.webp',
                 'description' => 'Стиральная машина INDESIT IWUD 4085 оснащена электроприводом, что позволяет существенно сократить траты электроэнергии и воды, а также уменьшить шумовой эффект от работы до минимума. При небольших габаритах эта машинка позволяет погрузить до 4 кг белья. Энергосбережение было классифицировано, европейской организацией стандартов, оценкой «А», такой же оценкой отмечена эффективность стирки.'
             ],
             [
@@ -31,7 +31,7 @@ class ProductsTableSeeder extends Seeder
                 'code' => 'Appliances',
                 'amount' => 20,
                 'price' => 6799,
-                'image' => 'https://c.dns-shop.ru/thumb/st4/fit/500/500/ff3274308e8084d39138be987a3838e4/79323ce9842ae764dbf1de212d438339c6da86ef5319fb17a83b4d1494d2f2a9.jpg.webp',
+                'image' => '/7hO4Ocb6DMS3bx0TrnPsZwsNjjbDIkgHeD8T2BWW.webp',
                 'description' => 'Пылесос-робот DEXP LF200 будет поддерживать чистоту в вашем доме. Система с боковыми щетками обеспечивает тщательный сбор мусора и пыли. Фильтр HEPA задерживает пыль и аллергены, предотвращая их попадание в воздух. Данная модель оснащена 3 режимами работы, функциями ограничения зон и уборки по расписанию. Пластиковый контейнер объемом 0.3 л без труда очищается от собранного мусора.'
             ],
             [
@@ -40,7 +40,7 @@ class ProductsTableSeeder extends Seeder
                 'code' => 'mobile',
                 'amount' => 12,
                 'price' => 27499,
-                'image' => 'https://c.dns-shop.ru/thumb/st4/fit/500/500/5e5f992d8f25e716f316b6b809ac149b/c6f585a24e816a5e5c3ca11204cdddd3d7744ded992b60fab2a1831495b8f846.jpg.webp',
+                'image' => '/cG8qu5ZQFNL7JRRwqXFFaZPoarl7gwzrb7iYtVf4.webp',
                 'description' => 'Со смартфоном Samsung Galaxy A32 ваши «цифровые» возможности станут буквально неограниченными. В основе ее работоспособности – процессор MediaTek Helio G80, графический ускоритель Mali-G52 и 4 ГБ оперативной памяти. Этого достаточно, чтобы работать в огромном количестве приложений и проходить мобильные игры.',
             ],
             [
@@ -49,7 +49,7 @@ class ProductsTableSeeder extends Seeder
                 'code' => 'mobile',
                 'amount' => 10,
                 'price' => 83999,
-                'image' => 'https://c.dns-shop.ru/thumb/st1/fit/500/500/23ddb6224cbde39a40dc299bed636ea5/8ccfdaf51f21bc6cbd55efa0100163e4dc47975dfab182b705fccd3e36ea9595.jpg.webp',
+                'image' => '/EO5j87CeiWkohzauIwpiuDH1bgSeJdeiINNB9XuT.webp',
                 'description' => 'iPhone 13 mini. Самая совершенная система двух камер на iPhone. Режим «Киноэффект» делает из видео настоящее кино. Супербыстрый чип A15 Bionic. Неутомимый аккумулятор. Прочный корпус. И еще более яркий дисплей Super Retina XDR.',
             ],
             [
@@ -58,7 +58,7 @@ class ProductsTableSeeder extends Seeder
                 'code' => 'entertainment',
                 'amount' => 2,
                 'price' => 51499,
-                'image' => 'https://c.dns-shop.ru/thumb/st1/fit/500/500/3aa5d4e17985d7034d9438963c17a3a6/ce195c5443d7a77ca323d8950443b10d45ad2f0f16d81c237f7565e873661e6c.jpg.webp',
+                'image' => '/cWWU37aZ6AE5hClCuCDLY2EyHb84nAKNLHeCEcHX.webp',
                 'description' => 'Квадрокоптер DJI Mavic Mini Combo – исключительно легкий летательный аппарат. Масса модели, равная лишь 249 г, упрощает процесс эксплуатации с правовой точки зрения. Установлена 12-мегапиксельная камера, гарантирующая съемку видео с разрешением до 2720x1530. Максимальный угол обзора равен 83°. Управлять коптером можно со смартфона или посредством пульта дистанционного управления. Радиус действия пульта ДУ равен 2 км.',
             ],
             [
@@ -67,7 +67,7 @@ class ProductsTableSeeder extends Seeder
                 'code' => 'entertainment',
                 'amount' => 10,
                 'price' => 2050,
-                'image' => 'https://c.dns-shop.ru/thumb/st4/fit/500/500/03bd12768d6ca4c4c87636bdd560595c/dc5375e46017cc0160ef522300c7b34948030da368f5ea80737b94cdb618b547.jpg.webp',
+                'image' => '/lA4B4uwZJDC3qQzXmMNiG4E4RiiOxQwFDH4ARqGU.webp',
                 'description' => 'Настольная игра «Пирамидки» станет прекрасным подарком для любого малыша. В ее комплекте найдется масса фигурок в виде животных, которых в различных конфигураций можно размещать друг над другом, создавая таким образом башенки и пирамиды. Яркие цвета и привлекательный дизайн понравятся и мальчикам, и девочкам в возрасте двух лет и старше.'
             ],
         ]);
